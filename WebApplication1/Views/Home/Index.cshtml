@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "My List";
+}
+
+<h2>My List</h2>
+
+<div>Total customer: @((ViewBag.RedisCache as DashboardData).TotalCustomerCount)</div>
+<div>Total Revenue:@((ViewBag.RedisCache as DashboardData).TotalRevenue)</div>
+<div>Top Selling Product name:@((ViewBag.RedisCache as DashboardData).TopSellingProductname)</div>
+<div>Top Selling Country Name:@((ViewBag.RedisCache as DashboardData).TopSellingCountryName)</div>
